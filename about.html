@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About • Waste2Grow</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .heading {
+      font-family: 'DM Serif Display', serif;
+      letter-spacing: 0.5px;
+    }
+
+    .grain {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(0,0,0,0.06) 1px, transparent 0);
+      background-size: 22px 22px;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-rise {
+      animation: rise 1s ease forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-[#FFF8EE] grain text-[#2F3E34] overflow-x-hidden">
+
+<!-- NAV -->
+<nav class="flex justify-between items-center px-10 py-6">
+  <a href="index.html" class="text-2xl font-extrabold text-[#1F3D2B]">
+    🌱 Waste2Grow
+  </a>
+  <div class="space-x-8 font-semibold text-[#355F4E]">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="underline">About</a>
+    <a href="planner.html">Grow Planner</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-[80vh] flex flex-col justify-center items-center text-center px-8">
+
+  <div class="animate-rise">
+    <h1 class="heading text-[4rem] text-[#1F3D2B] mb-4">
+      About <span class="bg-[#FFE08A] px-3 rounded-xl">Waste2Grow</span>
+    </h1>
+
+    <p class="text-[1.3rem] font-semibold text-[#355F4E] max-w-3xl mx-auto">
+      Turning everyday kitchen waste into something calm, green, and meaningful.
+    </p>
+
+    <p class="heading italic text-xl text-[#8A6A3E] mt-6">
+      “Waste is only waste when we fail to see its potential.”
+    </p>
+
+    <div class="text-[4rem] mt-8">🪴✨</div>
+  </div>
+
+</section>
+
+<!-- SECTION 1 -->
+<section class="px-12 py-20 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+  <div class="animate-rise">
+    <h2 class="heading text-3xl mb-5">
+      🌿 What is Waste2Grow?
+    </h2>
+
+    <p class="text-lg font-medium text-[#355F4E] leading-relaxed">
+      Waste2Grow is an AI-powered, blockchain-enabled platform designed to help
+      people reuse kitchen waste and turn it into organic home harvests.
+      <br><br>
+      From banana peels to onion bases — we help you grow food, not guilt.
+    </p>
+
+    <p class="mt-6 text-xl italic text-[#6F8F7A]">
+      “Small actions. Soft living. Sustainable futures.”
+    </p>
+  </div>
+
+  <img src="https://illustrations.popsy.co/green/plant-care.svg"
+       class="w-full drop-shadow-2xl rounded-3xl"
+       alt="Plant illustration">
+</section>
+
+<!-- SECTION 2 -->
+<section class="bg-[#F3EEDD] px-12 py-20">
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+    <img src="https://illustrations.popsy.co/green/eco-friendly.svg"
+         class="w-full drop-shadow-2xl rounded-3xl"
+         alt="Eco illustration">
+
+    <div>
+      <h2 class="heading text-3xl mb-5">
+        🌱 Why We Built This
+      </h2>
+
+      <p class="text-lg font-medium text-[#355F4E] leading-relaxed">
+        Food waste is one of the most overlooked environmental problems.
+        Waste2Grow was built to make sustainability
+        <span class="font-bold">simple, beautiful, and human</span>.
+      </p>
+
+      <div class="text-[3.5rem] mt-6">🌍💚</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="px-12 py-24 text-center">
+
+  <h2 class="heading text-3xl mb-6">
+    ✨ Our Vision
+  </h2>
+
+  <p class="text-xl font-semibold text-[#355F4E] max-w-4xl mx-auto">
+    To create a future where homes grow food,
+    waste feeds life,
+    and sustainability feels warm — not overwhelming.
+  </p>
+
+  <p class="heading italic text-xl text-[#8A6A3E] mt-8">
+    “Grow food. Grow hope. Grow gently.”
+  </p>
+
+  <div class="text-[4.5rem] mt-10">🌾🫶</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-10 text-[#6F8F7A] font-semibold">
+  Made with 🌱 for a greener tomorrow
+</footer>
+
+</body>
+</html>

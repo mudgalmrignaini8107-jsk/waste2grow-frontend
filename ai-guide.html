@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Waste Guide 🤖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/ai.css">
+</head>
+<body>
+
+<div class="bg-pattern"></div>
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<div class="ai-container">
+  <h1>🤖 Smart Waste Guide</h1>
+  <p class="subtitle">Tell us what waste you have today 🌿</p>
+
+  <div class="waste-grid">
+    <div class="waste-card" onclick="showGuide('banana')">🍌 Banana Peels</div>
+    <div class="waste-card" onclick="showGuide('tea')">☕ Tea Leaves</div>
+    <div class="waste-card" onclick="showGuide('veg')">🥬 Veg Scraps</div>
+    <div class="waste-card" onclick="showGuide('rice')">🍚 Rice Water</div>
+    <div class="waste-card" onclick="showGuide('egg')">🥚 Egg Shells</div>
+    <div class="waste-card" onclick="showGuide('citrus')">🍊 Citrus Peels</div>
+    <div class="waste-card" onclick="showGuide('coffee')">☕ Coffee Grounds</div>
+    <div class="waste-card" onclick="showGuide('bread')">🍞 Bread Waste</div>
+  </div>
+
+  <div id="guide-output" class="guide-box"></div>
+</div>
+
+<script src="js/ai.js"></script>
+</body>
+</html>

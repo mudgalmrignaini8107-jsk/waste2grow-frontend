@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Impact Dashboard | Waste2Grow</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/impact.css" />
+</head>
+
+<body class="bg-[#f6f1e7] text-[#3b3b2f]">
+
+<nav class="flex justify-between items-center px-10 py-6">
+  <h1 class="text-4xl font-bold">🌍 Impact Dashboard</h1>
+  <a href="index.html" class="text-xl underline">← Back Home</a>
+</nav>
+
+<section class="px-10">
+
+  <!-- Counters -->
+  <div class="grid grid-cols-3 gap-6 mb-10 text-center">
+    <div class="counter-card">🍌 Waste Reused<br><span id="waste">32 kg</span></div>
+    <div class="counter-card">🌱 Plants Grown<br><span id="plants">18</span></div>
+    <div class="counter-card">🌍 CO₂ Saved<br><span id="co2">12 kg</span></div>
+  </div>
+
+  <!-- Calendar -->
+  <h2 class="section-title">📅 Growth Calendar</h2>
+
+<div class="calendar-wrapper">
+
+  <div class="day-labels">
+    <span>Mon</span>
+    <span>Tue</span>
+    <span>Wed</span>
+    <span>Thu</span>
+    <span>Fri</span>
+    <span>Sat</span>
+    <span>Sun</span>
+  </div>
+
+  <div class="calendar-grid" id="calendar"></div>
+
+</div>
+
+
+  <!-- Bar Chart -->
+  <h2 class="section-title mt-14">📊 Monthly Impact</h2>
+
+  <div class="bar-container">
+    <div class="bar" style="height:60%">🌱<span>Plants</span></div>
+    <div class="bar" style="height:80%">🍌<span>Waste</span></div>
+    <div class="bar" style="height:45%">🌍<span>CO₂</span></div>
+  </div>
+
+</section>
+
+<script src="js/impact.js"></script>
+</body>
+</html>

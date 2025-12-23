@@ -1,0 +1,116 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.counter-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.counter-card span {
+  display: block;
+  font-size: 2.2rem;
+  color: #4f772d;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.day {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.day:hover {
+  transform: scale(1.2);
+}
+
+.level-0 { background: #eee; }
+.level-1 { background: #cce3b5; }
+.level-2 { background: #9ecf7f; }
+.level-3 { background: #5a8f3b; }
+
+.bar-container {
+  display: flex;
+  gap: 60px;
+  align-items: flex-end;
+  margin-top: 40px;
+  height: 300px;
+}
+
+.bar {
+  width: 120px;
+  background: linear-gradient(#a7c957, #6a994e);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  padding-bottom: 10px;
+  animation: grow 1.5s ease;
+}
+
+.bar span {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+@keyframes grow {
+  from { height: 0; }
+}
+.calendar-wrapper {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.day-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #6a994e;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.day {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.day:hover {
+  transform: scale(1.25);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us • Waste2Grow</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+
+    .heading {
+      font-family: 'DM Serif Display', serif;
+      letter-spacing: 0.5px;
+    }
+
+    .grain {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(0,0,0,0.05) 1px, transparent 0);
+      background-size: 22px 22px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity:0; transform: translateY(40px); }
+      to { opacity:1; transform: translateY(0); }
+    }
+
+    .animate-fadeUp {
+      animation: fadeUp 1s ease forwards;
+    }
+
+    input, select {
+      background: #FFFDF8;
+    }
+  </style>
+</head>
+
+<body class="bg-[#FFF8EE] grain text-[#2F3E34] overflow-x-hidden">
+
+<!-- NAV -->
+<nav class="flex justify-between items-center px-10 py-6">
+  <a href="index.html" class="text-2xl font-extrabold text-[#1F3D2B]">
+    🌱 Waste2Grow
+  </a>
+  <div class="space-x-8 font-semibold text-[#355F4E]">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="planner.html">Grow Planner</a>
+    <a href="contact.html" class="underline">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO + FORM -->
+<section class="max-w-7xl mx-auto px-10 py-20 grid md:grid-cols-2 gap-16 items-start">
+
+  <!-- LEFT CONTENT -->
+  <div class="animate-fadeUp">
+
+    <h1 class="heading text-[3.5rem] text-[#1F3D2B] mb-6">
+      Contact Us 🌿
+    </h1>
+
+    <p class="text-xl font-extrabold text-[#355F4E] mb-4">
+      Thank you for your interest!  
+      How can we help?
+    </p>
+
+    <p class="text-lg font-bold text-[#4A6F5C] mb-4">
+      Interested in working with us? Explore our services and initiatives.
+    </p>
+
+    <p class="text-lg font-bold text-[#4A6F5C] mb-8">
+      Need something else? Fill out this form and we’ll get back to you ASAP.
+    </p>
+
+    <p class="heading italic text-xl text-[#8A6A3E] mb-10">
+      “Let’s grow ideas, partnerships, and a greener future together.”
+    </p>
+
+    <div class="text-[4rem]">🌱📩✨</div>
+
+  </div>
+
+  <!-- FORM -->
+  <form class="bg-[#FFFDF8] rounded-[2.5rem] shadow-2xl p-10 space-y-6 animate-fadeUp">
+
+    <div class="grid grid-cols-2 gap-4">
+      <input type="text" placeholder="First Name" class="p-4 rounded-xl border font-semibold">
+      <input type="text" placeholder="Last Name" class="p-4 rounded-xl border font-semibold">
+    </div>
+
+    <input type="email" placeholder="Email Address" class="w-full p-4 rounded-xl border font-semibold">
+
+    <div class="grid grid-cols-3 gap-4">
+      <input type="text" placeholder="+91" class="p-4 rounded-xl border font-semibold">
+      <input type="text" placeholder="Phone Number" class="col-span-2 p-4 rounded-xl border font-semibold">
+    </div>
+
+    <select class="w-full p-4 rounded-xl border font-semibold">
+      <option>Service Needed</option>
+      <option>Partnership</option>
+      <option>AI Waste Solutions</option>
+      <option>Grow Planner</option>
+      <option>Other</option>
+    </select>
+
+    <button type="submit"
+      class="w-full bg-[#2F7D5E] text-white font-extrabold text-lg py-4 rounded-full hover:scale-105 transition">
+      Send Message 🌱
+    </button>
+
+  </form>
+
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="bg-[#F3EEDD] py-20 text-center px-10">
+
+  <h2 class="heading text-3xl mb-6">
+    Can't wait to get you on board 💚
+  </h2>
+
+  <p class="text-lg font-semibold text-[#355F4E] max-w-4xl mx-auto mb-10">
+    Imagine yourself at a great workplace surrounded by teams and people
+    who challenge, support, and inspire you every day.
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-8 text-lg font-bold text-[#1F3D2B]">
+
+    <a href="index.html" class="hover:underline">Book a meeting →</a>
+    <a href="index.html" class="hover:underline">See open positions →</a>
+    <a href="index.html" class="hover:underline">Connect with us →</a>
+    <a href="index.html" class="hover:underline">Partnerships →</a>
+    <a href="about.html" class="hover:underline">About →</a>
+
+  </div>
+
+  <div class="text-[4rem] mt-10">🌾🤝</div>
+
+</section>
+
+<footer class="text-center py-10 text-[#6F8F7A] font-semibold">
+  © Waste2Grow • Growing a better tomorrow 🌱
+</footer>
+
+</body>
+</html>

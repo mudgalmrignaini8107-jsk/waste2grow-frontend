@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grow Planner 🌱</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .heading {
+      font-family: 'DM Serif Display', serif;
+      letter-spacing: 0.5px;
+    }
+
+    .grain {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(0,0,0,0.05) 1px, transparent 0);
+      background-size: 20px 20px;
+    }
+
+    .plant-card {
+      font-size: 1.7rem;
+      font-weight: 800;
+      border-radius: 2.2rem;
+      padding: 2.4rem 1.6rem;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+      transition: all 0.3s ease;
+    }
+
+    .plant-card:hover {
+      transform: translateY(-12px) scale(1.07);
+      box-shadow: 0 30px 55px rgba(0,0,0,0.28);
+    }
+
+    .highlight {
+      background: linear-gradient(180deg, transparent 60%, #FFE08A 0%);
+      padding: 0 0.4rem;
+    }
+  </style>
+</head>
+
+<body class="bg-[#FFF8EE] grain overflow-hidden">
+
+<section class="min-h-screen px-10 py-14 flex flex-col justify-between">
+
+  <div>
+    <a href="index.html" class="text-sm font-extrabold tracking-wide text-[#2F5D50]">
+      ← Back to Home
+    </a>
+  </div>
+
+  <div class="max-w-6xl mx-auto text-center">
+
+    <h1 class="heading text-[3.6rem] text-[#1F3D2B] mb-4 drop-shadow-sm">
+      Grow Something  
+      <span class="highlight">Beautiful</span>
+    </h1>
+
+    <p class="text-[1.25rem] font-semibold text-[#355F4E] max-w-3xl mx-auto">
+      Turn everyday kitchen waste into calm, sustainable home harvests —
+      thoughtfully, organically, beautifully.
+    </p>
+
+    <p class="heading italic text-[#8A6A3E] text-xl mt-5">
+      “Small roots today, abundant harvest tomorrow.”
+    </p>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-7 max-w-5xl mx-auto mt-10">
+
+    <div onclick="showPlan('tulsi')" class="plant-card bg-[#CFF2E1]">🌿<br>Tulsi</div>
+    <div onclick="showPlan('tomato')" class="plant-card bg-[#FFD2C6]">🍅<br>Tomato</div>
+    <div onclick="showPlan('chili')" class="plant-card bg-[#FFE3A3]">🌶️<br>Chili</div>
+    <div onclick="showPlan('mint')" class="plant-card bg-[#BEEAD4]">🌱<br>Mint</div>
+    <div onclick="showPlan('onion')" class="plant-card bg-[#FFF0C9]">🧅<br>Onion</div>
+    <div onclick="showPlan('money')" class="plant-card bg-[#E2F2B8]">🪴<br>Money Plant</div>
+
+  </div>
+
+</section>
+
+<section id="planOutput"
+  class="fixed inset-0 bg-black/40 hidden flex items-center justify-center px-6">
+</section>
+
+<script>
+function showPlan(type) {
+
+  const plans = {
+    tulsi:["Soil + compost","Tea waste compost","Water every 2 days","4–6 hrs sunlight","Pinch leaves"],
+    tomato:["Loose soil","Banana peel compost","Daily watering","6–8 hrs sun","Support plant"],
+    chili:["Soil + compost","Rice water weekly","Alternate watering","Bright sunlight","Avoid overwater"],
+    mint:["Moist soil","Veg compost","Daily watering","Partial sun","Trim often"],
+    onion:["Use onion base","Loose soil","Only compost","2–3 day watering","Full sunlight"],
+    money:["Indoor plant","Rice water","Twice weekly","Indirect light","Low care"]
+  };
+
+  const output = document.getElementById("planOutput");
+
+  output.classList.remove("hidden");
+
+  output.innerHTML = `
+    <div class="bg-[#FFF8EE] rounded-[2.2rem] p-10 max-w-xl w-full shadow-2xl">
+      <h2 class="heading text-3xl mb-6 text-[#1F3D2B]">
+        Your Grow Plan 🌱
+      </h2>
+      <ul class="space-y-4 text-[#355F4E] text-lg font-semibold">
+        ${plans[type].map(s=>`<li>✨ ${s}</li>`).join("")}
+      </ul>
+      <div class="text-center mt-7">
+        <button onclick="this.closest('#planOutput').classList.add('hidden')"
+          class="px-9 py-3 rounded-full bg-[#2F7D5E] text-white font-bold tracking-wide hover:scale-105 transition">
+          Close
+        </button>
+      </div>
+    </div>
+  `;
+}
+</script>
+
+</body>
+</html>
